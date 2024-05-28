@@ -4,9 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.springframework.http.MediaType;
-import tangpoo.study.product_order_service.AddProductRequest;
-import tangpoo.study.product_order_service.DiscountPolicy;
-import tangpoo.study.product_order_service.UpdateProductRequest;
 
 public class ProductSteps {
 

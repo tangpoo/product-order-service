@@ -1,7 +1,6 @@
-package tangpoo.study.product_order_service;
+package tangpoo.study.product_order_service.product;
 
 import org.springframework.util.Assert;
-import tangpoo.study.product_order_service.DiscountPolicy;
 
 public record UpdateProductRequest(String name, int price, DiscountPolicy discountPolicy) {
 

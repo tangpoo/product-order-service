@@ -10,9 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import tangpoo.study.product_order_service.AddProductRequest;
 import tangpoo.study.product_order_service.ApiTest;
-import tangpoo.study.product_order_service.ProductRepository;
 
 class ProductApiTest extends ApiTest {
 
