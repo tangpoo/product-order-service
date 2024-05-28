@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Component
 public class DatabaseCleanup implements InitializingBean {
+
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -27,7 +28,8 @@ public class DatabaseCleanup implements InitializingBean {
             .filter(e -> isEntity(e) && hasTableAnnotation(e))
             .map(e -> {
                 String tableName = e.getJavaType().getAnnotation(Table.class).name();
-                return tableName.isBlank() ? CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, e.getName()) : tableName;
+                return tableName.isBlank() ? CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE,
+                    e.getName()) : tableName;
             })
             .collect(Collectors.toList());
 
@@ -54,7 +56,8 @@ public class DatabaseCleanup implements InitializingBean {
 
         for (final String tableName : tableNames) {
             entityManager.createNativeQuery("TRUNCATE TABLE " + tableName).executeUpdate();
-            entityManager.createNativeQuery("ALTER TABLE " + tableName + " ALTER COLUMN ID RESTART WITH 1").executeUpdate();
+            entityManager.createNativeQuery(
+                "ALTER TABLE " + tableName + " ALTER COLUMN ID RESTART WITH 1").executeUpdate();
         }
 
         entityManager.createNativeQuery("SET REFERENTIAL_INTEGRITY TRUE").executeUpdate();
