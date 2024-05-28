@@ -16,8 +16,8 @@ public class ApiTest {
     private int port;
 
     @BeforeEach
-    void setUp(){
-        if(RestAssured.port == RestAssured.UNDEFINED_PORT){
+    void setUp() {
+        if (RestAssured.port == RestAssured.UNDEFINED_PORT) {
             RestAssured.port = port;
             databaseCleanup.afterPropertiesSet();
         }
