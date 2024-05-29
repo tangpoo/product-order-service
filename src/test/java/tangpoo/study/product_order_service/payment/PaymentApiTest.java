@@ -1,9 +1,7 @@
 package tangpoo.study.product_order_service.payment;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import io.restassured.response.ExtractableResponse;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import tangpoo.study.product_order_service.ApiTest;

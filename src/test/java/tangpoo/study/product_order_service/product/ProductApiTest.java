@@ -1,7 +1,9 @@
 package tangpoo.study.product_order_service.product;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static tangpoo.study.product_order_service.product.ProductSteps.*;
+import static tangpoo.study.product_order_service.product.ProductSteps.상품등록요청;
+import static tangpoo.study.product_order_service.product.ProductSteps.상품등록요청_생성;
+import static tangpoo.study.product_order_service.product.ProductSteps.상품조회요청;
 
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
@@ -30,7 +32,7 @@ class ProductApiTest extends ApiTest {
     }
 
     @Test
-    void 상품조회(){
+    void 상품조회() {
         ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
         final Long productId = 1L;
 
@@ -41,7 +43,7 @@ class ProductApiTest extends ApiTest {
     }
 
     @Test
-    void 상품수정(){
+    void 상품수정() {
         ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
         final long productId = 1L;
 
