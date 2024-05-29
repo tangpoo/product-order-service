@@ -1,9 +1,11 @@
 package tangpoo.study.product_order_service.payment;
 
+import org.springframework.stereotype.Component;
 import tangpoo.study.product_order_service.order.Order;
 import tangpoo.study.product_order_service.product.DiscountPolicy;
 import tangpoo.study.product_order_service.product.Product;
 
+@Component
 class PaymentAdapter implements PaymentPort {
 
     private final PaymentGateway paymentGateway;

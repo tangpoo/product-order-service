@@ -2,7 +2,9 @@ package tangpoo.study.product_order_service.payment;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.stereotype.Repository;
 
+@Repository
 class PaymentRepository {
 
     private Map<Long, Payment> persistence = new HashMap<>();

@@ -1,5 +1,8 @@
 package tangpoo.study.product_order_service.payment;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ConsolePaymentGateway implements PaymentGateway {
 
     @Override

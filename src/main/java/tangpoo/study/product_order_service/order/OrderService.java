@@ -3,6 +3,7 @@ package tangpoo.study.product_order_service.order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class OrderService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> createOrder(@RequestBody final CreateOrderRequest request) {
 
         final Product product = orderPort.getProductById(request.productId());
