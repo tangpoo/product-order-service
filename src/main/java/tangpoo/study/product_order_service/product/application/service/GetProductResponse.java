@@ -1,6 +1,7 @@
-package tangpoo.study.product_order_service.product;
+package tangpoo.study.product_order_service.product.application.service;
 
 import org.springframework.util.Assert;
+import tangpoo.study.product_order_service.product.domain.DiscountPolicy;
 
 public record GetProductResponse(
     long id,

@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import tangpoo.study.product_order_service.ApiTest;
+import tangpoo.study.product_order_service.order.application.service.CreateOrderRequest;
 import tangpoo.study.product_order_service.product.ProductSteps;
 
 public class OrderApiTest extends ApiTest {

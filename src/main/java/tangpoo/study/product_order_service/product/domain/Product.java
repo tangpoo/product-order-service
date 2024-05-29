@@ -1,4 +1,4 @@
-package tangpoo.study.product_order_service.product;
+package tangpoo.study.product_order_service.product.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

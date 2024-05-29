@@ -1,4 +1,4 @@
-package tangpoo.study.product_order_service.order;
+package tangpoo.study.product_order_service.order.application.service;
 
 import org.springframework.util.Assert;
 

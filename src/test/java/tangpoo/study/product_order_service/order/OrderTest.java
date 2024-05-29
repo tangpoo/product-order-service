@@ -1,11 +1,10 @@
 package tangpoo.study.product_order_service.order;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import tangpoo.study.product_order_service.product.DiscountPolicy;
-import tangpoo.study.product_order_service.product.Product;
+import tangpoo.study.product_order_service.order.domain.Order;
+import tangpoo.study.product_order_service.product.domain.DiscountPolicy;
+import tangpoo.study.product_order_service.product.domain.Product;
 
 class OrderTest {
 

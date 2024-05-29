@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.springframework.http.MediaType;
-import tangpoo.study.product_order_service.order.CreateOrderRequest;
+import tangpoo.study.product_order_service.order.application.service.CreateOrderRequest;
 
 public class OrderSteps {
 

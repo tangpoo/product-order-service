@@ -1,9 +1,8 @@
 package tangpoo.study.product_order_service.product;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import tangpoo.study.product_order_service.product.domain.DiscountPolicy;
 
 class DiscountPolicyTest {
 

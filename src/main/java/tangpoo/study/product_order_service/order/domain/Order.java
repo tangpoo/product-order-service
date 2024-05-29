@@ -1,4 +1,4 @@
-package tangpoo.study.product_order_service.order;
+package tangpoo.study.product_order_service.order.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.util.Assert;
-import tangpoo.study.product_order_service.product.Product;
+import tangpoo.study.product_order_service.product.domain.Product;
 
 @Entity
 @Table(name = "orders")

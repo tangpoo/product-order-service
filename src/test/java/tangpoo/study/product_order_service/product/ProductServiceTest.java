@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
+import tangpoo.study.product_order_service.product.application.port.ProductPort;
+import tangpoo.study.product_order_service.product.application.service.GetProductResponse;
+import tangpoo.study.product_order_service.product.application.service.ProductService;
+import tangpoo.study.product_order_service.product.application.service.UpdateProductRequest;
 
 @SpringBootTest
 public class ProductServiceTest {

@@ -1,8 +1,10 @@
-package tangpoo.study.product_order_service.order;
+package tangpoo.study.product_order_service.order.adapter;
 
 import org.springframework.stereotype.Component;
-import tangpoo.study.product_order_service.product.Product;
-import tangpoo.study.product_order_service.product.ProductRepository;
+import tangpoo.study.product_order_service.order.application.port.OrderPort;
+import tangpoo.study.product_order_service.order.domain.Order;
+import tangpoo.study.product_order_service.product.adapter.ProductRepository;
+import tangpoo.study.product_order_service.product.domain.Product;
 
 @Component
 class OrderAdapter implements OrderPort {

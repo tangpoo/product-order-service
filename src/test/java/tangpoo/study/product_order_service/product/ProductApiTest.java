@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import tangpoo.study.product_order_service.ApiTest;
+import tangpoo.study.product_order_service.product.adapter.ProductRepository;
+import tangpoo.study.product_order_service.product.application.service.AddProductRequest;
 
 class ProductApiTest extends ApiTest {
 

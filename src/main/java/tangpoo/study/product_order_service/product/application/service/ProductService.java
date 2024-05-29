@@ -1,4 +1,4 @@
-package tangpoo.study.product_order_service.product;
+package tangpoo.study.product_order_service.product.application.service;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import tangpoo.study.product_order_service.product.application.port.ProductPort;
+import tangpoo.study.product_order_service.product.domain.Product;
 
 @RestController
 @RequestMapping("/products")
